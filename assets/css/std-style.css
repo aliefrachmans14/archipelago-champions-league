@@ -1,0 +1,311 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.bg {
+    background-image: url(../img/bg-schedule.svg);
+    /* height: 100%; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ! RESPONSIVE */
+
+
+/* ! NAVBAR */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #DDDDDD;
+    font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: #DDDDDD;
+    text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.25);
+}
+
+.navbar-brand {
+    text-align: left;
+    align-items: center;
+    width: 250px;
+    /* border: solid 2px white; */
+}
+
+.navbar-brand img {
+    /* border: solid 2px white; */
+    width: 70%;
+    height: 70%;
+    margin-top: 25px;
+}
+
+.navbar-toggler {
+    padding: 0 0;
+    border: none;
+}
+
+
+/* ! DOTA 2 */
+
+.dota2 {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+}
+
+.dota2 img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ! lined tabs */
+
+.standing-menu {
+    margin: 30px auto;
+    /* border: solid 2px white; */
+}
+
+.lined .nav-link {
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: #DDDDDD;
+    letter-spacing: 0.32em;
+}
+
+.lined .nav-link:hover {
+    border: none;
+    color: #DDDDDD;
+    text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+}
+
+.lined .nav-link.active {
+    background: none;
+    border: none;
+    font-weight: 600;
+    text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+}
+
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 2px white; */
+}
+
+.standing-menu ul li {
+    text-align: left;
+}
+
+
+/* ! Slider Content */
+
+.row.standing-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+
+.carousel-indicators {
+    bottom: -15px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 0 -30px;
+}
+
+
+/* ! Table Content */
+
+table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    /* border: 1px solid #dedede */
+}
+
+table thead tr th,
+table tbody tr td {
+    padding: 20px;
+    /* border: 1px solid #dedede; */
+    color: #DDDDDD
+}
+
+table thead tr th {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+table.result-point tr td.number {
+    width: 100px;
+    position: relative
+}
+
+.text-left {
+    text-align: left !important
+}
+
+.table td,
+.table thead th,
+.table th {
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+table tr td {
+    padding: 10px 20px;
+    /* border: 1px solid #dedede */
+}
+
+table tr td {
+    padding: 10px 40px;
+    /* border: 1px solid #dedede */
+}
+
+table tr td img {
+    max-width: 32px;
+    float: left;
+    margin-right: 11px;
+    margin-top: 1px;
+    display: none;
+    /* border: 1px solid #dedede */
+}
+
+tbody tr .team-performance {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ! BRACKET */
+
+.bracket-header,
+.bracket-team-bottom,
+.bracket-team-top {
+    font-size: 10px;
+}
+
+#profile2 p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #C0A441;
+}
+
+#profile2 hr {
+    background-color: #C0A441;
+}
+
+
+/* ! Footer */
+
+.row.main-footer {
+    margin-top: 100px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #0A0A0A;
+}
+
+.row.content-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 700px;
+}
+
+.row.content-footer span,
+.row.content-footer p {
+    font-size: 10px;
+}
+
+.row.content-footer span {
+    color: #0041A3;
+    font-weight: bold;
+}
+
+.row.content-footer p {
+    color: #E2E2E2;
+}
+
+.col-md-4 img {
+    margin: 5px auto;
+}
+
+
+/* ! DESKTOP */
+
+@media (min-width: 992px) {
+    .bg {
+        background-size: cover;
+        background-position: 0 0;
+    }
+    .container {
+        max-width: 1250px;
+    }
+    /* ! NAVBAR */
+    .navbar-dark .navbar-nav .nav-link {
+        margin: 0 30px;
+    }
+    .navbar-dark .navbar-nav .nav-link:last-of-type {
+        margin-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #DDDDDD;
+        text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+    }
+    .navbar-brand {
+        width: auto;
+    }
+    /* ! DOTA 2 */
+    .dota2 {
+        margin-top: 120px;
+    }
+    .dota2 img {
+        width: 40%;
+    }
+    /* ! Lined Tabs */
+    .lined .nav-link {
+        font-size: 24px;
+    }
+    .standing-menu ul li .left {
+        text-align: left;
+    }
+    .standing-menu ul li .right {
+        text-align: right;
+    }
+    /* ! Table Content */
+    table tr td img {
+        display: block;
+        /* border: 1px solid #dedede */
+    }
+    /* ! BRACKET */
+    .bracket-header {
+        font-size: 16px;
+    }
+    .bracket-team-bottom,
+    .bracket-team-top {
+        font-size: 14px;
+    }
+}

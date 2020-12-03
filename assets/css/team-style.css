@@ -1,0 +1,264 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.bg {
+    background-image: url(../img/bg-schedule.svg);
+    /* height: 100%; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ! RESPONSIVE */
+
+
+/* ! NAVBAR */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #DDDDDD;
+    font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: #DDDDDD;
+    text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.25);
+}
+
+.navbar-brand {
+    text-align: left;
+    align-items: center;
+    width: 250px;
+    /* border: solid 2px white; */
+}
+
+.navbar-brand img {
+    /* border: solid 2px white; */
+    width: 70%;
+    height: 70%;
+    margin-top: 25px;
+}
+
+.navbar-toggler {
+    padding: 0 0;
+    border: none;
+}
+
+
+/* ! DOTA 2 */
+
+.dota2 {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+}
+
+.dota2 img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ! CONTENT */
+
+.team-champ {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.team-champ h2 {
+    margin-bottom: 100px;
+    width: 80%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.32em;
+    color: #DDDDDD;
+    text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+}
+
+.team-champ h4 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+    margin-top: 100px;
+    letter-spacing: 0.05em;
+    color: #DDDDDD;
+}
+
+
+/* ! Champions */
+
+.col-lg-4 {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.col-lg-4 .achievement {
+    width: 70%;
+    height: auto;
+}
+
+.col-lg-4 h4 {
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+    color: #DDDDDD;
+    text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+}
+
+
+/* ! Winner */
+
+.winner {
+    order: 1;
+}
+
+
+/* ! Winner */
+
+.winner .team-photo {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ! Runner Up*/
+
+.runnerup {
+    order: 2;
+}
+
+.runnerup .team-photo {
+    width: 40%;
+    height: auto;
+}
+
+
+/* ! Third */
+
+.third {
+    order: 3;
+}
+
+.third .team-photo {
+    width: 30%;
+    height: auto;
+}
+
+
+/* ! Footer */
+
+.row.main-footer {
+    margin-top: 100px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #0A0A0A;
+}
+
+.row.content-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 700px;
+}
+
+.row.content-footer span,
+.row.content-footer p {
+    font-size: 10px;
+}
+
+.row.content-footer span {
+    color: #0041A3;
+    font-weight: bold;
+}
+
+.row.content-footer p {
+    color: #E2E2E2;
+}
+
+.col-md-4 img {
+    margin: 5px auto;
+}
+
+
+/* ! DESKTOP */
+
+@media (min-width: 992px) {
+    .bg {
+        background-size: cover;
+        background-position: 0 0;
+    }
+    .container {
+        max-width: 1250px;
+    }
+    /* ! NAVBAR */
+    .navbar-dark .navbar-nav .nav-link {
+        margin: 0 30px;
+    }
+    .navbar-dark .navbar-nav .nav-link:last-of-type {
+        margin-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #DDDDDD;
+        text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+    }
+    .navbar-brand {
+        width: auto;
+    }
+    /* ! DOTA 2 */
+    .dota2 {
+        margin-top: 120px;
+    }
+    .dota2 img {
+        width: 40%;
+    }
+    /* ! CONTENT */
+    .team-champ h2 {
+        font-size: 32px;
+        line-height: 54px;
+    }
+    .team-champ h4 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    /* ! Winner */
+    .winner {
+        order: 2;
+    }
+    .winner .team-photo {
+        width: 70%;
+    }
+    /* ! Runner Up */
+    .runnerup {
+        order: 3;
+    }
+    .runnerup .team-photo {
+        width: 60%;
+    }
+    /* ! Third */
+    .third {
+        order: 1;
+    }
+    .third .team-photo {
+        width: 50%;
+    }
+}

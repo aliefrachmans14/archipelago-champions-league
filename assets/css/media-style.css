@@ -1,0 +1,217 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.bg {
+    background-image: url(../img/bg-schedule.svg);
+    /* height: 100%; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ! RESPONSIVE */
+
+
+/* ! NAVBAR */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #DDDDDD;
+    font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: #DDDDDD;
+    text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.25);
+}
+
+.navbar-brand {
+    text-align: left;
+    align-items: center;
+    width: 250px;
+    /* border: solid 2px white; */
+}
+
+.navbar-brand img {
+    /* border: solid 2px white; */
+    width: 70%;
+    height: 70%;
+    margin-top: 25px;
+}
+
+.navbar-toggler {
+    padding: 0 0;
+    border: none;
+}
+
+
+/* ! DOTA 2 */
+
+.dota2 {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+}
+
+.dota2 img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ! CONTENT */
+
+.media,
+.row.text-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media {
+    margin: 50px auto;
+}
+
+.row.text-title h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 0.32em;
+    color: #DDDDDD;
+    text-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+}
+
+.row.text-title h4 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 70px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #DDDDDD;
+}
+
+.row.text-title span {
+    font-weight: 600;
+}
+
+.row.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row.social-media .col-lg-5 {
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+}
+
+.row.social-media .col-lg-5:hover {
+    transform: scale(1.05);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.row.social-media .col-lg-5 a img {
+    padding: 20px;
+}
+
+
+/* ! Footer */
+
+.row.main-footer {
+    margin-top: 100px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #0A0A0A;
+}
+
+.row.content-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 700px;
+}
+
+.row.content-footer span,
+.row.content-footer p {
+    font-size: 10px;
+}
+
+.row.content-footer span {
+    color: #0041A3;
+    font-weight: bold;
+}
+
+.row.content-footer p {
+    color: #E2E2E2;
+}
+
+.col-md-4 img {
+    margin: 5px auto;
+}
+
+
+/* ! DESKTOP */
+
+@media (min-width: 992px) {
+    .bg {
+        background-size: cover;
+        background-position: 0 0;
+    }
+    .container {
+        max-width: 1250px;
+    }
+    /* ! NAVBAR */
+    .navbar-dark .navbar-nav .nav-link {
+        margin: 0 30px;
+    }
+    .navbar-dark .navbar-nav .nav-link:last-of-type {
+        margin-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #DDDDDD;
+        text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+    }
+    .navbar-brand {
+        width: auto;
+    }
+    /* ! DOTA 2 */
+    .dota2 {
+        margin-top: 120px;
+    }
+    .dota2 img {
+        width: 40%;
+    }
+    /* ! CONTENT */
+    .row.text-title h2 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .row.text-title h4 {
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
+    .row.social-media .col-lg-5 {
+        width: 100%;
+    }
+    .row.social-media .col-lg-5 a img {
+        padding: 50px;
+    }
+}
